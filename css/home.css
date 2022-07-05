@@ -33,3 +33,29 @@ i:nth-child(3n+3) {
 		transform: translateY(calc(100vh + 200px));
 	}
 }
+.container {
+	position: absolute;
+	color: pink;
+	margin: auto;
+	border: none; 
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	z-index: 10;
+}
+.me {
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 3em;
+	color: whitesmoke;
+	font-family: Georgia, monospace;
+	font-style: oblique;
+	font-display: block;
+	background: rgba(0, 0, 0, 0.789);
+}
+.me > span {
+	color: #8f33ff;
+}
