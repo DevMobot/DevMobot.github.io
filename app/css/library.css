@@ -1,0 +1,57 @@
+
+:root{
+    --background: rgb(12, 13, 15);
+    --text-color: rgb(236, 236, 236);
+    --primary-color: #2b2b2b;
+    --secondary-color: #000;
+    --alpha-color: rgba(20, 19, 19, 0.633);
+    --shadow: 0 15px 40px var(--alpha-color);
+    --header-color: rgb(12, 13, 15); /* 33 37 45 , 12 15 18 */
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+.queue {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.queueItem {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+.queueItem>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.queueTrackArt {
+    align-self: center;
+    margin-left: 8px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    max-width: 64px;
+}

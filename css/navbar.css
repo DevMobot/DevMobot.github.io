@@ -1,0 +1,66 @@
+.navbar-default {
+	background-color: transparent;
+	transition: background-color 0.3s;
+}
+
+.navbar {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 0;
+	border-radius: 0;
+	font-size: 15px;
+	letter-spacing: 4px;
+	position: fixed;
+	width: 100vw;
+	z-index: 10;
+	font-family: 'Cuprum';
+	font-weight: 500;
+}
+
+.navbar-scrolled {
+	background-color: var(--navbar);
+	/* rgba(15, 25, 34, 0.39);  */
+	backdrop-filter: blur(6px);
+	border-bottom: 1px ridge #70707025;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	/*color: #1abc9c !important;*/
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Cuprum';
+	font-weight: 100;
+	font-size: large;
+}
+
+.navbar-default .navbar-brand:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.navbar-default .navbar-brand>span {
+	font-weight: 600;
+}
+
+.navbar-default .in {
+	background-color: var(--background);
+	border-bottom: #fff solid 1px;
+}
+
+.navbar-default .collapsing {
+	background-color: var(--background);
+}
+
+.navbar-toggle {
+	border: none;
+}

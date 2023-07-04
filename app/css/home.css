@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: rgb(12, 13, 15);
+    --text-color: rgb(236, 236, 236);
+    --primary-color: #63ff69;
+    --secondary-color: #000;
+    --alpha-color: rgba(20, 19, 19, 0.633);
+    --shadow: 0 15px 40px var(--alpha-color);
+    --header-color: rgb(12, 13, 15); /* 33 37 45 , 12 15 18 */
+}
+
+html {
+    background: var(--background);
+}
+
+body {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background: var(--background);
+    font-family: 'roboto', sans-serif;
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+/* Top Header */
+.top-header {
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 95px;
+    background-color: var(--header-color);
+    padding-inline: 10px;
+    margin: 0;
+    position: fixed;
+    box-shadow: var(--shadow);
+}
+.top-header > h1 {
+    padding-top: 10px;
+    margin-left: 14px;
+}
+.top-header > h1 > span {
+    font-family: fantasy;
+    font-weight: 700;
+    font-style: oblique;
+}
+.searchbox {
+    margin-inline: 10px;
+    border: solid rgb(49, 53, 62);
+    padding: 3px;
+    padding-inline: 5px;
+    border-radius: 7px;
+    color: rgb(142, 142, 142);
+    margin-top: 8px;
+}
+.searchbox > span {
+    float: right;
+}
+/* home section */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    overflow-y: scroll;
+    position: relative;
+    display: block;
+    margin-top: 85px; /* TOP MARGIN WAS 85PX */
+    scroll-behavior: smooth;
+}
+.empty-section {
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    content: none;
+    display: block;
+}
+.carousel {
+    width: 100%;
+    height: 130px;
+    border-radius: 20px;
+    position: relative;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.carousel img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    flex: 0 0 auto;
+}
+.carousel img.active {
+    opacity: 1;
+}
+
+.heading{
+    margin: 25px 0 10px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+/* playlists card */
+
+.playlists-group{
+    position: relative;
+    width: 100%;
+    min-height: 140px;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin-bottom: 10px;
+}
+
+.playlist-card {
+    flex: 0 0 auto;
+    max-width: 130px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.playlist-card-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: blur(0px);
+}
+
+.playlist-card-name {
+    width: 100%;
+    text-align: justify;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 5px;
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Cuprum|Sacramento|Righteous|Ubuntu"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      ,
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" , href="css/home.css" />
+    <link rel="stylesheet" , href="css/navbar.css" />
+    <link rel="stylesheet" , href="css/styledbtn.css" />
+    <link rel="stylesheet" , href="css/home/contacts.css" />
+    <link rel="stylesheet" , href="css/project-card.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.png" />
+
+    <title>DevMobot's Portfolio</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+            style="background-color: transparent"
+            onclick="toggleMenu()"
+          >
+            <span class="icon-bar" style="background-color: #fff"></span>
+            <span class="icon-bar" style="background-color: #fff"></span>
+            <span class="icon-bar" style="background-color: #fff"></span>
+          </button>
+          <a class="navbar-brand" href="https://devmobot.github.io"
+            ><span>Dev </span>Mobot</a
+          >
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#About">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center bg-1">
+      <div id="particles-js"></div>
+      <h1 class="heading">
+        I am Developer Mohit, <br />the sorcerer of code <br />and creator of
+        wonders.
+      </h1>
+      <button
+        id="mainbtn"
+        onclick="location.href = '#About'; scroll('mainbtn')"
+        class="styledbtn"
+      >
+        Welcome To My World
+      </button>
+      <!-- <img class="img-circle img-responsive" style="display:inline; width: 40rem;" src="imgs/k.jpeg"> -->
+    </div>
+
+    <div class="container2 text-center" style="scroll-snap-type: y">
+      <div
+        class="container-fluid bg-2 text-center"
+        id="About"
+        style="margin: 0; padding: 0; scroll-snap-align: start"
+      >
+        <div id="me">
+          <img src="imgs/me2-adj.jpg" />
+        </div>
+        <div class="intro">
+          <span class="sectiontag">ABOUT</span>
+          <h1 class="typewriter">Developer</h1>
+          <p>
+            I'm Mohit aka Dev Mobot, an experienced Full-Stack Developer,&nbsp;I
+            actively seek new challenges and learning opportunities to enhance
+            my skills.&nbsp;As you explore my portfolio,&nbsp;you'll find
+            examples of my work and insight into my creative process.&nbsp;I'm
+            enthusiastic about further growth as a developer and eager to
+            discuss future opportunities with you.
+          </p>
+        </div>
+      </div>
+
+      <div class="div-divider"></div>
+
+      <div
+        class="container-fluid bg-3 text-center"
+        id="projects"
+        style="scroll-snap-align: start"
+      >
+        <span class="sectiontag">projects</span>
+        <span class="projects-title">The Digital Wonderland: Step Inside</span>
+        <div class="scrollbar-hidden workslist">
+          <div
+            class="project-card"
+            onclick="location.href = 'tictactoe.html'"
+            style="height: 360px"
+          >
+            <img src="imgs/tictactoe.png" />
+            <span class="project-heading">TicTacToe</span>
+            <span class="project-desc">
+              This is a simple TicTacToe game made in javascript. You can play
+              with a friend or a bot.
+            </span>
+          </div>
+          <div class="project-card" style="height: 360px">
+            <img src="imgs/yt-logo-name.png" />
+            <span class="project-heading">Youtube clone</span>
+            <span class="project-desc">
+              This Project is a partial clone of Youtube with some
+              modifications.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-divider"></div>
+
+      <div
+        class="container-fluid bg-4 text-left"
+        id="contacts"
+        style="scroll-snap-align: start"
+      >
+        <div class="contact-view">
+          <div class="contacts">
+            <div class="contact-superblock">
+              <div class="contact" title="View GitHub Profile">
+                <a href="https://github.com/DevMobot">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <div class="contact" title="Join Discord Server">
+                <a href="https://github.com/DevMobot">
+                  <i class="fa-brands fa-discord"></i>
+                  <span>Discord</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-superblock" title="View Instagram Profile">
+              <div class="contact">
+                <a href="https://instagram.com/brogrammer_mohit">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </div>
+              <div class="contact" title="Email Me">
+                <a href="mailto:pro.dev.mohit@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <span class="sectiontag">Contact</span>
+            <form
+              id="contact-form"
+              method="POST"
+              action="https://mail.google.com/mail/?view=cm&to=pro.dev.mohit@gmail.com&su=I+have+a+problem+to+solve!"
+            >
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name=""
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="message"
+                  name="body"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="styledbtn submitbtn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-divider"></div>
+
+      <footer class="container-fluid text-center">
+        <div id="logo"><a href="https://devmobot.github.io">M</a></div>
+        <div class="breaker"></div>
+        <div class="row footerlinks">
+          <div><a href="#About">About</a></div>
+          <div><a href="#projects">Projects</a></div>
+          <div><a href="#contacts">Contact</a></div>
+        </div>
+        <div class="breaker"></div>
+        <div class="row">
+          <div
+            title="View Instagram Profile"
+            style="font-size: 3.2rem"
+            class="contactlink"
+          >
+            <a target="_blank" href="https://instagram.com/_developer.mohit"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div
+            title="View GitHub Profile"
+            style="font-size: 3rem"
+            class="contactlink"
+          >
+            <a target="_blank" href="https://github.com/DevMobot">
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div
+            title="Join Discord Server"
+            style="font-size: 3rem"
+            class="contactlink"
+          >
+            <a target="_blank" href="https://discord.gg/HXzysCWxr2">
+              <i class="fa-brands fa-discord"></i
+            ></a>
+          </div>
+        </div>
+        <span>Dev Mobot</span>
+      </footer>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script>
+      function scroll(e) {
+        const element = document.getElementById(e);
+
+        element.scrollIntoView();
+        element.scrollIntoView(true);
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+
+      function gcd(a, b) {
+        return b == 0 ? a : gcd(b, a % b);
+      }
+      var w = screen.width;
+      var h = screen.height;
+      var r = gcd(w, h);
+      console.log(w / r + ":" + h / r);
+
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        var targetDiv = document.querySelector("#About");
+        var rect = targetDiv.getBoundingClientRect();
+
+        // If the top of the target div is visible in the viewport
+        if (rect.top <= 0) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 225, // Adjust the number of particles
+            density: {
+              enable: true,
+              value_area: 750, // Increase or decrease to control particle density
+            },
+          },
+          color: {
+            value: "#ffffff", // Change the color of particles
+          },
+          shape: {
+            type: "circle", // Change the shape of particles (circle, edge, triangle, polygon, star, image)
+          },
+          size: {
+            value: 3, // Adjust the size of particles
+            random: true,
+            anim: {
+              enable: true,
+              speed: 2, // Adjust the speed of particle animation
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          move: {
+            enable: true,
+            speed: 0.25, // Adjust the speed at which particles fall
+            direction: "bottom", // Change the direction of particle movement (none, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left)
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "",
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 500,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 200,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 20,
+              duration: 0.3,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+
+      let navToggled = false;
+      function toggleMenu() {
+        const navbar = document.getElementsByClassName("navbar-default")[0];
+        if (navToggled) {
+          navToggled = false;
+          navbar.style.background = "transparent";
+        } else {
+          navToggled = true;
+          navbar.style.background = "var(--background)";
+        }
+      }
+
+      /*
+		let sizecheck = window.matchMedia("(max-width: 768px)");
+		function setShit() {
+			if (sizecheck.matches) {
+				Array.from(document.getElementsByClassName('contactlink')).forEach(element => {
+					element.setAttribute('style', 'font-size: 3rem;');
+				});
+			} else {
+				Array.from(document.getElementsByClassName('contactlink')).forEach(element => {
+					element.setAttribute('style', 'font-size: 3vw;');
+				});
+			}
+		}
+		sizecheck.addEventListener('change', setShit)
+		*/
+    </script>
+  </body>
+</html>

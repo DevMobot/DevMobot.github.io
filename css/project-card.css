@@ -1,0 +1,87 @@
+.projects-title {
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'Audiowide';
+    margin: 12px;
+    margin-top: 4px;
+    padding: 4px;
+}
+
+.workslist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 62%;
+    overflow-x: scroll;
+}
+
+.project-card {
+    height: 80%;
+    width: 35%;
+    min-width: 300px;
+    max-height: 560px;
+    max-width: 460px;
+    border: 2px ridge #28283a94;
+    padding: 10px;
+    margin-inline: 10px;
+    margin-block: 8px;
+    border-radius: 15px;
+    background-color: #1c1f295e;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+}
+
+.project-card:hover {
+    transform: translateY(-2%);
+}
+
+.project-card>img {
+    height: 70%;
+    width: 100%;
+    border-radius: 15px;    
+    margin-bottom: 4px;
+    object-fit: cover;
+}
+
+.project-card .project-heading {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+    font-family: 'Cuprum';
+    margin: 4px;
+    position: relative;
+}
+
+.project-card .project-desc {
+    color: white;
+    margin: 4px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .workslist {
+        flex-direction: row;
+        justify-content: start;
+        overflow: scroll;
+        scroll-snap-type: inline;
+    }
+    .project-card {
+        scroll-snap-align: center;
+    }
+    .projects-title {
+        font-size: 2rem;
+    }
+    .project-card:hover {
+        transform: translateY(0%);
+    }
+    .project-card:focus {
+        transform: translateY(2%);
+    }
+}

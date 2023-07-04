@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" , href="css/library.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <div class="queue">
+
+    </div>
+    <script>
+        let song_count = Android.getSongCount();
+
+        const init = () => {
+            for (let i = 0; i < song_count; i++) {
+                document.getElementById("test").innerHTML += "<br>" + Android.getSongName(i);
+            }
+
+        }
+        //init()
+
+        const displayQueue = () => {
+            for (let i = 0; i < song_count; i++) {
+
+                let listItem = document.createElement("div");
+                let artDiv = document.createElement("div");
+                let trackNameSpan = document.createElement("span");
+
+                let queueDiv = document.querySelector(".queue");
+
+                artDiv.classList.add("queueTrackArt");
+                listItem.classList.add("queueItem");
+                listItem.id = i + "";
+
+                listItem.setAttribute("onclick", `Android.playSong(${i});`);
+                //`redirect('${host_conn}//${host}/player?index=${i+1}')`;
+
+                let trackNameText = document.createTextNode(Android.getSongName(i));
+                trackNameSpan.appendChild(trackNameText);
+
+                artDiv.style.backgroundImage = `url(${Android.getSongArt(i)})`;
+
+                queueDiv.appendChild(listItem);
+                listItem.appendChild(artDiv);
+                listItem.appendChild(trackNameSpan);
+            }
+        }
+        displayQueue();
+        if (Android.isDarkTheme() == "false") {
+            var r = document.querySelector(':root');
+
+            r.style.setProperty('--background', 'white');
+            r.style.setProperty('--text-color', 'black');
+            r.style.setProperty('--header-color', 'white');
+            r.style.setProperty('--primary-color', 'whitesmoke');
+            r.style.setProperty('--alpha-color', 'rgba(200, 200, 200, 0.200)');
+        }
+
+    </script>
+</body>
+
+</html>

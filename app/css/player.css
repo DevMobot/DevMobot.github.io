@@ -1,0 +1,164 @@
+:root{
+    --background: #0c0d0f;
+    --text-color: rgb(236, 236, 236);
+    --primary-color: #949494;
+    --secondary-color: rgb(37, 37, 37);
+    --alpha-color: rgba(32, 32, 32, 0.611);
+    --shadow: 0 15px 40px var(--alpha-color);
+    --header-color: rgb(12, 13, 15); /* 33 37 45 */
+}
+body {
+    background-color: var(--background);/*#876488 7289da*/
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    display: block;
+    color: var(--text-color);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+} 
+.player {
+    overflow: hidden;
+    align-self: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+} 
+.header {
+    top: 0;
+    margin-top: 0px;
+    border-bottom: #949494 0px solid;
+    background-color: var(--header-color);
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: 3rem;
+    font-size: 1.15rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-weight: 400;
+    color: var(--text-color);
+    padding: 0;
+    flex-direction: row;
+}
+.header-title {
+    overflow: hidden;
+    height: 1.3rem;
+    margin-right: 28px;
+}
+.queueButton {
+    font-size: x-large;
+    margin-inline: 18px;
+    margin-right: 25px;
+}
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 28px;
+    width: 100%;
+} 
+.track-art {
+    margin: 28px;
+    height: 320px;
+    width: 320px;
+    background-image: url("/app/imgs/albumart.jpg");
+    background-size: cover;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: var(--shadow);
+} 
+.now-playing {
+    font-size: 1rem;
+} 
+.track-name {
+    font-size: 2rem;
+    margin-block: 7px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: hidden;
+    height: 2rem;
+    max-width: 95%;
+}
+.track-artist {
+    font-size: 1.2rem;
+} 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.playpause-track, .prev-track, .next-track {
+    padding: 28px;
+    opacity: 0.8;
+  
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+} 
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+    opacity: 1.0;
+} 
+.slider_container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+} 
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: var(--primary-color);
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+} 
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.seek_slider:hover, .volume_slider:hover {
+    opacity: 1.0;
+} 
+.seek_slider {
+    width: 80%;
+} 
+.volume_slider {
+    width: 30%;
+} 
+.current-time, .total-duration {
+    padding: 10px;
+} 
+i.fa-volume-down, i.fa-volume-up {
+    padding: 10px;
+} 
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}

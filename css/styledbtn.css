@@ -1,0 +1,41 @@
+
+.styledbtn {
+    margin-top: 25px;
+    color: #fff;
+    padding-block: 8px;
+    padding-inline: 10px;
+    text-align: center;
+    background-color: var(--main-btn); 
+    border: #fff 1px solid;
+    font-size: min(1.5vw, 35px);
+    font-weight: 500;
+    z-index: 100;
+    transition: all 0.2s;
+    font-family: 'Cuprum';
+}
+
+.styledbtn:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #fff;
+    transform: translateY(-0.25em); /*
+    background-color: #661bc9cc; */
+}
+
+@media only screen and (max-width: 768px) {
+    .styledbtn {
+        font-size: 3.4vw;
+        margin-top: 15px;
+        padding-block: 6px;
+        padding-inline: 7px;
+        border: 1px solid #fff;
+    }
+}
+
+@media (max-width: 1124px) and (min-width: 787px) {
+    .styledbtn {
+        font-size: 2vw;
+        margin-top: 15px;
+        padding-block: 6px;
+        padding-inline: 7px;
+        border: 1px solid #fff;
+    }
+}

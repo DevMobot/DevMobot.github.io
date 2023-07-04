@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" , href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" , href="css/tictactoe.css">
+    
+    <title>TicTacToe</title>
+</head>
+
+<body>
+    <div class="container-fluid text-center" id="game-end" style="display: none;">
+        <div>
+            <h2 id="wonPlayerTitle" class="title">K</h2>
+            <button class="btn btn-danger" onclick="reload();">Reset</button>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center" id="menu" style="display: grid;">
+        <div>
+            <h2 class="title">Tic Tac Toe</h2>
+            <p>Select player</p>
+            <button type="button" class="btn btn-primary" onclick="botPlaying(true);">Robot</button>
+            <button type="button" class="btn btn-primary" onclick="botPlaying(false)">Human</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div class="container-fluid text-center" id="mc" style="display: none;">
+        <div id="p2" class="player">Player O</div>
+        <div class="row" id="row-0">
+            <div class="col-xs-4 column" id="0">-</div>
+            <div class="col-xs-4 column" id="1">-</div>
+            <div class="col-xs-4 column" id="2">-</div>
+        </div>
+        <div class="row" id="row-1">
+            <div class="col-xs-4 column" id="0">-</div>
+            <div class="col-xs-4 column" id="1">-</div>
+            <div class="col-xs-4 column" id="2">-</div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="col-xs-4 column" id="0">-</div>
+            <div class="col-xs-4 column" id="1">-</div>
+            <div class="col-xs-4 column" id="2">-</div>
+        </div>
+        <div id="p1" class="player active">Player X</div>
+    </div>
+    
+    
+    <script text="text/Javascript" src="js/tictactoe.js"></script> 
+
+    <script>
+        /*
+        const scriptElement = document.createElement('script');
+        scriptElement.src = "http://localhost:5500/js/tictactoe.js";
+        document.body.appendChild(scriptElement);
+        function reload() {
+            document.getElementById("game-end").style.display = "none";
+            document.getElementById('menu').style.display = 'grid';
+            if (scriptElement) {
+                scriptElement.src = "";
+                scriptElement.onload = () => {
+                    scriptElement.src = "http://localhost:5500/js/tictactoe.js";
+                }
+            }
+        }
+        */
+
+    </script>
+</body>
+
+</html>

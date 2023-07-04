@@ -1,0 +1,69 @@
+.container-fluid {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    color: white;
+}
+
+.column {
+    background-color: gray;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.player {
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+}
+
+.active {
+    box-shadow: 0px 0px 4px 4px rgba(0, 255, 13, 0.473);
+}
+
+#title {
+    font-size: 3.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: white;
+}
+
+.btn {
+    padding-block: 10px;
+    padding-inline: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 3.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: white;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 9999;
+}
+
